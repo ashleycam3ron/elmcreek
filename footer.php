@@ -1,5 +1,5 @@
 	<footer id="footer" class="container-fluid text-center">
-		<?php wp_nav_menu( array('menu' => 'main','depth' => 1,'menu_class' => 'nav')); ?>
+		<?php wp_nav_menu( array('menu' => 'main','depth' => 1,'menu_class' => 'nav hidden-xs')); ?>
 		<address>535 West Boyd Avenue, Elm Creek, NE 68836</address>
 		<p>Office <a tel="308-856-4624">(308) 856-4624</a>  <span>|</span>  Fax <a tel="308-856-4997">(308) 856-4997</a></p>
 	    <p class="copyright">&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>

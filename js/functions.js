@@ -26,6 +26,7 @@ jQuery('p').each(function() {
 });
 
 //bootstrap for mobile
+/*
 if (window.matchMedia('(min-width: 768px)').matches){
 	jQuery(function($) {
 		$('.navbar .dropdown').hover(function() {
@@ -40,3 +41,4 @@ if (window.matchMedia('(min-width: 768px)').matches){
 		});
 	});
 }
+*/

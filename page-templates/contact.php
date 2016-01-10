@@ -5,25 +5,18 @@ Template Name: Contact Us
 
 get_header(); ?>
 
-<div id="contact" class="row">
-	<h2><?php the_title(); ?></h2>
-	<iframe id="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6047.775859312817!2d-99.38331873186257!3d40.72048354493254!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x879ebabd28a57a97%3A0xe9ac0eae630f5837!2s535+W+Boyd+Ave%2C+Elm+Creek%2C+NE+68836!5e0!3m2!1sen!2sus!4v1450594671596" width="100%" height="500" frameborder="0" style="border:0" allowfullscreen></iframe>
-
+<div id="contact" class="container wrapper">
+	<div id="banner" class="row"><?php the_post_thumbnail('full'); ?></div>
 	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-		<article <?php post_class(array('text-center','col-xs-10','col-xs-offset-1','col-md-6','col-md-offset-3','dark')) ?> id="post-<?php the_ID(); ?>">
-			<div class="entry">
-				<?php the_content(); ?>
-			</div>
+		<article <?php post_class(array('entry','col-xs-10','col-xs-offset-1','col-md-5')) ?> id="post-<?php the_ID(); ?>">
+			<h1><?php the_title(); ?></h1>
+			<?php the_content(); ?>
 		</article>
 	<?php endwhile; ?>
-	<?php else : ?>
-		<h2>Not Found</h2>
 	<?php endif; ?>
-
-	<div class="row dark">
-		<div class="container">
-			<?php echo do_shortcode('[gravityform id="1" title="false" description="false"]'); ?>
-		</div>
-	</div>
+	<aside class="col-xs-10 col-md-6 message">
+		<h2>Send us a message</h2>
+		<?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
+	</aside>
 </div>
 <?php get_footer(); ?>

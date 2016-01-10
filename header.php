@@ -1,39 +1,31 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <!-->
-
-<html <?php language_attributes(); ?> class="no-js">
-<!--<![endif]-->
-
+<html <?php language_attributes(); ?>>
 <head>
-    <meta charset="<?php bloginfo('charset'); ?>">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="content-type" content="<?php bloginfo('html_type'); ?>; charset=<?php bloginfo('charset'); ?>" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <meta http-equiv="content-type" content="text/html; charset=<?php bloginfo('charset'); ?>">
-    <meta http-equiv="content-language" content="<?php bloginfo('language'); ?>">
-    <meta name="description" content="<?php bloginfo('name');?> <?php bloginfo('description');?>. <?php the_field('col1', 58); ?>" />
-    <meta name="author" content="<?php bloginfo('name'); ?>">
-    <meta name="copyright" content="Copyright <?php bloginfo('name');?> <?php echo date('Y');?>. All Rights Reserved.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#2C3757">
     <meta name="mobile-web-app-capable" content="yes">
+    <meta name="author" content="<?php bloginfo('name'); ?>">
+    <meta name="copyright" content="Copyright <?php bloginfo('name');?> <?php echo date('Y');?>. All Rights Reserved.">
     <meta name="dc.language" CONTENT="US">
-	<meta name="dc.source" CONTENT="http://elmcreekne.com/">
-	<meta name="dc.title" CONTENT="<?php bloginfo('name');?> <?php bloginfo('description');?>">
+	<meta name="dc.source" CONTENT="<?php echo esc_url( home_url() ) ?>">
+	<meta name="dc.title" CONTENT="<?php echo wp_title(); ?>">
+	<meta name="dc.subject" CONTENT="<?php bloginfo('description');?>">
 	<meta name="dc.keywords" CONTENT="Elm Creek">
-	<meta name="dc.subject" CONTENT="<?php bloginfo('name');?> <?php bloginfo('description');?>">
-	<meta name="dc.description" CONTENT="<?php bloginfo('name');?> <?php the_field('col1', 58); ?>">
 	<meta name="dc.creator" content="Ashley Cameron">
-    <title><?php echo wp_title();?></title>
-    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/favicon.ico" />
+	<title><?php echo wp_title();?></title>
+    <link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri() ?>/favicon.ico" />
     <link rel="icon" sizes="192x192" href="<?php echo get_stylesheet_directory_uri() ?>/images/favicon-192.png">
+    <link rel="image_src" href="<?php echo get_stylesheet_directory_uri() ?>/images/logo.png" />
     <link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
     <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
-    <?php wp_head();?>
+    <?php wp_head(); ?>
 </head>
+
 <body <?php body_class(); ?>>
+	<h3 class="hidden"><?php bloginfo('name')?> <?php bloginfo('description');?></h3>
 <!-- 	<div id="center" style="width: 1px; background: red;position: absolute;left: 50%;top:0;height: 100%;z-index: 10;"></div> -->
 
 	<header id="header" role="banner">
@@ -51,10 +43,9 @@
 				        </button>
 			        </div>
 			        <a class="navbar-brand col-sm-3 hidden-lg" href="<?php echo esc_url( home_url() ) ?>">
-						<h1><?php bloginfo('name')?> <?php bloginfo('description');?></h1>
 						<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/images/Village-of-Elm-Creek-Logo.png" alt="Village of Elm Creek Logo">
 					</a>
-			        <div class="collapse navbar-collapse navbar-ex1-collapse row">
+			        <div class="collapse navbar-collapse navbar-ex1-collapse">
 						<div id="location" class="hidden-xs hidden-sm col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-1 top text-center">
 							<p class="title">Located at</p>
 							<p class="geo">40º43'7'N / 99º22'31'W</p>

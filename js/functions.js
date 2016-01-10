@@ -25,8 +25,13 @@ jQuery('p').each(function() {
         $this.remove();
 });
 
+//alert
+jQuery(function($){
+	$("#menu-quick-links li.alert a").fancybox({type:'iframe',width:450,maxHeight:400,padding:0});
+	$("#menu-quick-links li.concern a").fancybox({type:'iframe',width:650,maxHeight:450,padding:0});
+});
+
 //bootstrap for mobile
-/*
 if (window.matchMedia('(min-width: 768px)').matches){
 	jQuery(function($) {
 		$('.navbar .dropdown').hover(function() {
@@ -41,4 +46,3 @@ if (window.matchMedia('(min-width: 768px)').matches){
 		});
 	});
 }
-*/

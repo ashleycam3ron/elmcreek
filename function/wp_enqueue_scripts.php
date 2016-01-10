@@ -18,7 +18,7 @@ function enqueue(){
 	wp_register_script('functions', get_stylesheet_directory_uri() . '/js/functions.js', NULL, NULL);
 
 //enqueue scripts
-	wp_enqueue_script(array('jquery','bootstrap','functions'));
+	wp_enqueue_script(array('jquery','bootstrap','fancybox2','functions'));
 
 	//styles
 	//Bootstrap Core CSS
@@ -34,7 +34,7 @@ function enqueue(){
 
 
 //enqueue styles
-	wp_enqueue_style(array('bootstrap','styles'));
+	wp_enqueue_style(array('bootstrap','fancybox2','styles'));
 
 
 }

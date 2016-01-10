@@ -5,7 +5,13 @@
 	    <p class="copyright">&copy; <?php echo date('Y');?> <?php bloginfo('name'); ?>. All Rights Reserved.</p>
 	    <small><a href="http://ashley-cameron.com" style="color:#975f1c;" target="_blank">Handcrafted by Ashley Cameron</a></small>
 	</footer>
-
+<?php if (get_field('alert', 142)){ ?>
+	<script>
+		$(document).ready(function($){
+        	$('#menu-quick .alert').addClass('on');
+		});
+    </script>
+<?php } ?>
   </body>
 </html>
 <?php wp_footer();?>

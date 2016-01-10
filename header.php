@@ -56,12 +56,12 @@
 					</a>
 			        <div class="collapse navbar-collapse navbar-ex1-collapse row">
 						<div id="location" class="hidden-xs hidden-sm col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-1 top text-center">
-							<h2>Located at</h2>
+							<p class="title">Located at</p>
 							<p class="geo">40º43'7'N / 99º22'31'W</p>
 							<p>Central Nebraska along the <br/>Platte River Valley</p>
 						</div>
 						<div id="estb" class="hidden-xs hidden-sm col-sm-4 top text-center">
-							<h2>Established</h2>
+							<p class="title">Established</p>
 							<p>1866</p>
 							<?php get_search_form(); ?>
 						</div>

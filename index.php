@@ -2,15 +2,15 @@
 	<div class="container">
 		<?php while(have_posts()) : the_post();?>
 
-			<div class="entry col-md-10 col-md-offset-1">
+			<article class="entry col-md-10 col-md-offset-1">
 				<div class="connect">
                     <span>Connect</span>
                     <?php wp_nav_menu( array('menu' => 'Social')); ?>
                 </div>
-				<h2><?php the_title();?></h2>
+				<h1><?php the_title();?></h1>
 				<?php the_content();?>
 
-			</div>
+			</article>
 
 		<?php endwhile;?>
 

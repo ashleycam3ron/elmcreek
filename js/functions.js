@@ -1,23 +1,3 @@
-// sticky menu
-/*
-jQuery(document).ready(function() {
-    if(window.matchMedia('(min-width: 768px)').matches) {
-        jQuery(".sticky").sticky({topSpacing:0});
-    }
-});
-*/
-
-/*
-jQuery(".fancybox, .gallery a").fancybox({
-	//padding: 0,
-	helpers:  {
-        title : {
-            type : 'inside'
-        }
-    }
-});
-*/
-
 //remove empty p tags
 jQuery('p').each(function() {
     var $this = $(this);
@@ -27,7 +7,7 @@ jQuery('p').each(function() {
 
 //alert
 jQuery(function($){
-	$("#menu-quick-links li.alert a").fancybox({type:'iframe',width:450,maxHeight:400,padding:0});
+	$("#menu-quick-links li.alert a").fancybox({type:'iframe',width:450,maxHeight:300,padding:0});
 	$("#menu-quick-links li.concern a").fancybox({type:'iframe',width:650,maxHeight:450,padding:0});
 });
 

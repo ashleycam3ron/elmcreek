@@ -35,18 +35,18 @@
 			    <nav class="navbar navbar-default" role="navigation">
 			        <h2>Primary Navigation</h2>
 			        <div class="navbar-header">
-				        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+				        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
 				            <span class="sr-only">Toggle navigation</span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
-				            <span class="icon-bar"></span>
+				            <span class="icon-bar top-bar"></span>
+				            <span class="icon-bar middle-bar"></span>
+				            <span class="icon-bar bottom-bar"></span>
 				        </button>
 			        </div>
 			        <a class="navbar-brand col-sm-3 hidden-lg" href="<?php echo esc_url( home_url() ) ?>">
 						<img class="img-responsive" src="<?php echo get_stylesheet_directory_uri() ?>/images/Village-of-Elm-Creek-Logo.png" alt="Village of Elm Creek Logo">
 					</a>
-			        <div class="collapse navbar-collapse navbar-ex1-collapse">
-						<div id="location" class="hidden-xs hidden-sm col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-1 top text-center">
+			        <div id="navbar" class="navbar-collapse collapse navbar-ex1-collapse">
+				        	<div id="location" class="hidden-xs hidden-sm col-sm-5 col-sm-offset-2 col-lg-4 col-lg-offset-1 top text-center">
 							<p class="title">Located at</p>
 							<p class="geo">40º43'7'N / 99º22'31'W</p>
 							<p>Central Nebraska along the <br/>Platte River Valley</p>

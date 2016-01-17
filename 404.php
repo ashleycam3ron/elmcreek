@@ -1,21 +1,16 @@
 <?php get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+<div id="error-404" class="container" style="margin-top: 5%;">
+	<article>
+        <div class="entry col-sm-12">
+			<img class="img-responsive" style="margin: auto;" src="<?php echo get_stylesheet_directory_uri() ?>/images/404.png">
+		</div>
+	</article>
+</div>
 
-			<section class="error-404 not-found">
-				<header class="page-header">
-					<h1 class="page-title"><?php _e( 'Oops! That page can&rsquo;t be found.', 'elmcreek' ); ?></h1>
-				</header><!-- .page-header -->
-
-				<div class="page-content">
-					<p><?php _e( 'It looks like nothing was found at this location. Maybe try a search?', 'elmcreek' ); ?></p>
-
-					<?php get_search_form(); ?>
-				</div><!-- .page-content -->
-			</section><!-- .error-404 -->
-
-		</main><!-- .site-main -->
-	</div><!-- .content-area -->
-
+<? if (is_404()) { ?>
+ _gaq.push(['_trackEvent', '404',
+              document.location.pathname + document.location.search,
+              document.referrer, 0, true]);
+<? } ?>
 <?php get_footer(); ?>

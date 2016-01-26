@@ -75,6 +75,8 @@ h2.entry-title a {
 }
 .wrapper{background: #f1efe1;}
 .entry p{line-height: 1.7;}
+.page-id-16 .entry p {line-height: 1.35;}
+.page-id-16 h2 {margin-bottom: 4px;}
 p, .page-id-18 .entry p, .history .entry p {
     margin: 0 0 15px;
     line-height: 1.4;

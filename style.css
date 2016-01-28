@@ -98,6 +98,7 @@ a:active {color:#900;text-decoration: none;}
   box-shadow: 0 0 10px rgba(189, 241, 241, 0.88);
 }
 img{max-width: 100%;height: auto;}
+#banner img{min-width: 100%;}
 
 ::selection		{background:#ECE6DA;color:inherit;}
 ::-moz-selection{background:#ECE6DA;color:inherit;}

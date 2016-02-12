@@ -20,7 +20,7 @@
 					<h3 class="ticket"><span>Days 'til Buffalo Stampede</span> <br /><?php echo $days_remaining; ?></h3>
 					<div class="public">
 						<h4>Public Announcement</h4>
-						<p>Please allow extra time for travel when roads are icy.</p>
+						<?php the_field('announcement'); ?>
 					</div>
 				</div>
 				<div class="col-sm-8 col-md-10 history">

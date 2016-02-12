@@ -1,16 +1,18 @@
 <?php get_header(); ?>
 
-<div id="error-404" class="container" style="margin-top: 5%;">
+<div id="error-404" class="container-fluid">
 	<article>
-        <div class="entry col-sm-12">
-			<img class="img-responsive" style="margin: auto;" src="<?php echo get_stylesheet_directory_uri() ?>/images/404.png">
+        <div class="entry row">
+	        <h1 class="hidden">Page not found</h1>
 		</div>
 	</article>
 </div>
 
 <? if (is_404()) { ?>
+<script>
  _gaq.push(['_trackEvent', '404',
-              document.location.pathname + document.location.search,
-              document.referrer, 0, true]);
+  document.location.pathname + document.location.search,
+  document.referrer, 0, true]);
+</script>
 <? } ?>
 <?php get_footer(); ?>

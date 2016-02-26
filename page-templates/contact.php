@@ -14,7 +14,7 @@ get_header(); ?>
 		</article>
 	<?php endwhile; ?>
 	<?php endif; ?>
-	<aside class="col-xs-10 col-md-6 message">
+	<aside class="col-xs-12 col-md-6 message">
 		<h2>Send us a message</h2>
 		<?php echo do_shortcode('[gravityform id="2" title="false" description="false"]'); ?>
 	</aside>

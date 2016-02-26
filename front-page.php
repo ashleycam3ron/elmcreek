@@ -12,15 +12,19 @@
 			             <?php echo do_shortcode("[wunderground location='zmw:68836.1.99999' layout='simple' numdays='1' showdata='highlow' hidedata='search,icon']"); ?>
 			        </div>
 					<?php
-						$date = strtotime("August 25, 2016 10:00 AM");
+						$event = get_field('countdown');
+						$date = strtotime($event);
+						//$date = strtotime("August 25, 2016 10:00 AM");
 						$remaining = $date - time();
 						$days_remaining = floor($remaining / 86400);
 						$hours_remaining = floor(($remaining % 86400) / 3600);
 					?>
 					<h3 class="ticket"><span>Days 'til Buffalo Stampede</span> <br /><?php echo $days_remaining; ?></h3>
 					<div class="public">
+						<div class="top"></div>
 						<h4>Public Announcement</h4>
-						<?php the_field('announcement'); ?>
+						<div class="text"><?php the_field('announcement'); ?></div>
+						<div class="bottom"></div>
 					</div>
 				</div>
 				<div class="col-sm-8 col-md-10 history">
